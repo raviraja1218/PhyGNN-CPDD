@@ -1,7 +1,0 @@
-PHYGNN-CPDD PROJECT COMPLETE
-Phase 2C Status: COMPLETED
-Best F1: 0.5287
-Source: Improved Training
-Beats FPOCKET: YES (+0.0087)
-Paper Ready: YES
-Date: 2026-01-09 19:28:54

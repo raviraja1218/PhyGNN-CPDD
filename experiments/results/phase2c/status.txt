@@ -1,3 +1,0 @@
-Phase 2C: Strategically Complete
-Status: Publishable with Phase 2B results
-Next: Write paper based on Phase 2B (F1=0.5444 beats FPOCKET)

@@ -1,5 +1,0 @@
-PHASE 2C VALIDATED
-Quick test F1: 0.4080
-Label fixing successful
-Training pipeline working
-Phase 2C infrastructure validated
