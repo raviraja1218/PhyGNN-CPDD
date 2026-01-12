@@ -1,0 +1,16 @@
+{
+  "hamgnn_f1": 0.5444234404536862,
+  "hamgnn_precision": 0.62882096069869,
+  "hamgnn_recall": 0.48,
+  "hamgnn_auc": 0.9258259925954296,
+  "hamgnn_pred_loss": 0.15122111567429133,
+  "hamgnn_physics_loss": 641.025146484375,
+  "hamgnn_total_loss": 0.21532362699508667,
+  "base_gnn_f1": 0.3077,
+  "improvement_absolute": 0.2367234404536862,
+  "improvement_relative": 76.93319481757759,
+  "physics_weight": 0.0001,
+  "physics_contribution_percent": 29.770311573796874,
+  "num_train_graphs": 56,
+  "num_val_graphs": 14
+}

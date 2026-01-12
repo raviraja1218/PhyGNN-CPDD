@@ -1,0 +1,17 @@
+\begin{table}[ht]
+\centering
+\caption{Ablation study: Impact of physics constraints on performance}
+\label{tab:ablation}
+\begin{tabular}{lcccc}
+\hline
+\textbf{Model Configuration} & \textbf{Disabled Components} & \textbf{F1 Score} & \textbf{Precision} & \textbf{Recall} \\
+\hline
+Full Physics & none & 0.544 & 0.629 & 0.480 \\
+No Hydrogen Bonds & hydrogen\_bonds & 0.531 & 0.615 & 0.467 \\
+No Hydrophobic & hydrophobic & 0.525 & 0.608 & 0.462 \\
+No Vdw & van\_der\_waals & 0.512 & 0.594 & 0.451 \\
+No Electrostatics & electrostatics & 0.488 & 0.567 & 0.426 \\
+No Physics & all\_physics & 0.308 & 0.210 & 0.560 \\
+\hline
+\end{tabular}
+\end{table}

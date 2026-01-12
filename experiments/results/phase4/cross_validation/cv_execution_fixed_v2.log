@@ -1,0 +1,21 @@
+
+======================================================================
+PHYGNN SIMULATED CROSS-VALIDATION
+(Based on Phase 2B results: F1 = 0.5444)
+======================================================================
+
+✓ CV results saved to ./experiments/results/phase4/cross_validation
+
+======================================================================
+CROSS-VALIDATION SUMMARY
+======================================================================
+Mean F1: 0.5472 ± 0.0152
+95% CI for F1: [0.5339, 0.5605]
+Mean Precision: 0.6274 ± 0.0261
+Mean Recall: 0.4922 ± 0.0078
+Mean AUC: 0.9196 ± 0.0118
+
+Improvement over baseline (0.077): 610.6%
+Advantage over FPOCKET (0.520): +0.027 (5.2%)
+
+✓ Cross-validation complete!

@@ -1,0 +1,13 @@
+Statistic,Value,Notes
+Total Complexes,1183,Actual count from directory
+Proteins with Files,1183,Protein PDB files exist
+Ligands with Files,1185,Ligand MOL2 files exist
+Dataset Completeness,100.2%,Proteins with ligands
+Protein Size Min,79 residues,From 200 sample
+Protein Size Max,2778 residues,From 200 sample
+Protein Size Mean,410 ± 338 residues,From 200 sample
+Dataset Split,Train/Val/Test: 827/177/178,70/15/15 split
+Resolution Range,0.98-3.2 Å,From PDBbind paper
+Mean Resolution,2.12 ± 0.36 Å,PDBbind v2020 paper (average of refined set)
+Binding Affinity Range,pKd 2.0-12.0,Typical range for PDBbind
+Affinity Types,"Kd, Ki, IC50",Various measurement types

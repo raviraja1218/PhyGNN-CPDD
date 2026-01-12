@@ -1,0 +1,19 @@
+{
+  "test_f1": 0.4080267558528428,
+  "test_precision": 0.25957446808510637,
+  "test_recall": 0.953125,
+  "test_auc": 0.9336710426179605,
+  "training_time_seconds": 2.9055826663970947,
+  "num_graphs": 10,
+  "label_balance": 0.06520198440822111,
+  "hyperparameters": {
+    "lambda_physics": 0.0001,
+    "learning_rate": 0.001,
+    "batch_size": 2,
+    "hidden_dim": 128,
+    "pos_weight": 20.0,
+    "dropout": 0.3,
+    "epochs": 50,
+    "patience": 15
+  }
+}

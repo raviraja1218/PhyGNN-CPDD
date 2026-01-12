@@ -1,0 +1,83 @@
+{
+  "analysis_type": "feature_variability_ablation",
+  "data_dir": "./data/processed/physics_graphs/train/",
+  "n_proteins_analyzed": 10,
+  "n_features": 35,
+  "top_features": [
+    {
+      "index": 0,
+      "variability": 0.04973895301418147,
+      "avg_mean": 0.07927310913801193
+    },
+    {
+      "index": 16,
+      "variability": 0.04345375245236295,
+      "avg_mean": 0.07779381703585386
+    },
+    {
+      "index": 9,
+      "variability": 0.03806969560196105,
+      "avg_mean": 0.06250786427408457
+    },
+    {
+      "index": 15,
+      "variability": 0.036486633027903954,
+      "avg_mean": 0.05995628666132689
+    },
+    {
+      "index": 7,
+      "variability": 0.03386713924003269,
+      "avg_mean": 0.10076076984405517
+    },
+    {
+      "index": 11,
+      "variability": 0.031156395374257385,
+      "avg_mean": 0.05271505378186703
+    },
+    {
+      "index": 10,
+      "variability": 0.023819739740747675,
+      "avg_mean": 0.08698629625141621
+    },
+    {
+      "index": 6,
+      "variability": 0.022793610487767943,
+      "avg_mean": 0.05213659927248955
+    },
+    {
+      "index": 14,
+      "variability": 0.02039556966372748,
+      "avg_mean": 0.046278570871800186
+    },
+    {
+      "index": 1,
+      "variability": 0.019241609964368765,
+      "avg_mean": 0.04179635550826788
+    },
+    {
+      "index": 13,
+      "variability": 0.018448326903184216,
+      "avg_mean": 0.0349620271474123
+    },
+    {
+      "index": 5,
+      "variability": 0.01784804248695043,
+      "avg_mean": 0.04366944655776024
+    },
+    {
+      "index": 18,
+      "variability": 0.017472223242367402,
+      "avg_mean": 0.0360940158367157
+    },
+    {
+      "index": 3,
+      "variability": 0.016127573156359168,
+      "avg_mean": 0.04790659248828888
+    },
+    {
+      "index": 17,
+      "variability": 0.015300908000795383,
+      "avg_mean": 0.02457170293200761
+    }
+  ]
+}

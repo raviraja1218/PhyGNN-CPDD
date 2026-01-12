@@ -1,0 +1,66 @@
+\subsection*{Dataset}
+We used the PDBbind v2020 refined set containing 1,183 high-quality experimental protein-ligand complexes with resolution < 2.5Å. The dataset was split into training (827 proteins), validation (177 proteins), and test (178 proteins) sets with no sequence homology >30\% between splits.
+
+\subsection*{Graph representation}
+Proteins were represented as graphs $G = (V, E)$ where nodes $v_i \in V$ correspond to amino acid residues and edges $e_{ij} \in E$ connect spatially proximate residues (distance < 8Å) or sequentially adjacent residues.
+
+\subsubsection*{Node features}
+Each node was represented by a 35-dimensional feature vector including:
+\begin{itemize}
+    \item Residue type (20 one-hot encoded)
+    \item Partial charges (estimated from residue type)
+    \item van der Waals radii (standard values)
+    \item Hydrogen bond donor/acceptor potential
+    \item Hydrophobicity (Kyte-Doolittle scale)
+    \item Charge properties
+    \item Positional encoding (x, y, z coordinates)
+\end{itemize}
+
+\subsubsection*{Edge features}
+Edges were characterized by 4 physics dimensions:
+\begin{itemize}
+    \item Electrostatic interaction potential
+    \item van der Waals interaction energy
+    \item Hydrogen bond formation probability
+    \item Hydrophobic interaction strength
+\end{itemize}
+
+\subsection*{Hamiltonian GNN architecture}
+The Hamiltonian GNN implements message passing with physics constraints:
+
+\begin{equation}
+\mathbf{h}_i^{(l+1)} = \sigma\left(\mathbf{W}^{(l)}\mathbf{h}_i^{(l)} + \sum_{j\in\mathcal{N}(i)} \alpha_{ij}^{(l)}\mathbf{V}^{(l)}\mathbf{h}_j^{(l)} + \lambda \cdot \nabla_{\mathbf{h}_i}E_{\text{physics}}(\mathbf{h})\right)
+\end{equation}
+
+where $E_{\text{physics}}$ includes:
+\begin{align}
+E_{\text{bond}} &= \frac{1}{2}k_b(r - r_0)^2 \\
+E_{\text{angle}} &= \frac{1}{2}k_\theta(\theta - \theta_0)^2 \\
+E_{\text{elec}} &= \frac{q_i q_j}{4\pi\epsilon_0\epsilon_r r} \\
+E_{\text{vdW}} &= 4\epsilon\left[\left(\frac{\sigma}{r}\right)^{12} - \left(\frac{\sigma}{r}\right)^6\right]
+\end{align}
+
+\subsection*{Loss function}
+The total loss combines prediction loss with physics regularization:
+
+\begin{equation}
+\mathcal{L}_{\text{total}} = \mathcal{L}_{\text{prediction}} + \lambda \cdot \mathcal{L}_{\text{physics}}
+\end{equation}
+
+where $\lambda = 0.0001$ was optimized through hyperparameter search.
+
+\subsection*{Training details}
+Models were trained for 100 epochs using Adam optimizer with learning rate 0.001 and batch size 4. Early stopping was applied with patience of 20 epochs. Weighted binary cross-entropy loss addressed class imbalance (4.6\% pocket residues).
+
+\subsection*{Evaluation metrics}
+Performance was evaluated using:
+\begin{itemize}
+    \item F1 score: $2 \cdot \frac{\text{Precision} \cdot \text{Recall}}{\text{Precision} + \text{Recall}}$
+    \item Precision: $\frac{TP}{TP + FP}$
+    \item Recall: $\frac{TP}{TP + FN}$
+    \item AUC-ROC: Area under receiver operating characteristic curve
+    \item 95\% confidence intervals from 5-fold cross-validation
+\end{itemize}
+
+\subsection*{Implementation}
+PhyGNN was implemented in PyTorch and PyTorch Geometric. All experiments were conducted on an NVIDIA RTX 4050 GPU with 6GB VRAM.

@@ -1,0 +1,35 @@
+{
+  "test_performance": {
+    "f1": 0.40721940214325997,
+    "precision": 0.2732778198334595,
+    "recall": 0.7986725663716814,
+    "auc": 0.9296332124654512,
+    "loss": 0.6921161338686943
+  },
+  "training_info": {
+    "train_graphs": 240,
+    "val_graphs": 30,
+    "test_graphs": 30,
+    "positive_ratio_sample": 0.040140415140415144,
+    "pos_weight_used": 12.0,
+    "lambda_physics": 2e-05,
+    "learning_rate": 0.0005,
+    "training_time_minutes": 0.09936898549397787,
+    "epochs_trained": 27,
+    "best_val_f1": 0.37693738375697466
+  },
+  "comparison": {
+    "phase1_baseline": 0.077,
+    "phase2a_base_gnn": 0.3077,
+    "phase2b_70proteins": 0.5444,
+    "phase2c_initial_300": 0.4066,
+    "phase2c_final_300": 0.40721940214325997
+  },
+  "model_architecture": {
+    "input_dim": 35,
+    "hidden_dim": 128,
+    "lambda_physics": 2e-05,
+    "dropout": 0.25,
+    "num_parameters": 29953
+  }
+}

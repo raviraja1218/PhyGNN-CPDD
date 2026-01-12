@@ -1,0 +1,58 @@
+{
+  "./data/processed/physics_graphs/train/": {
+    "n_files": 70,
+    "sample_stats": {
+      "nodes": 786,
+      "edges": 8924,
+      "features": 35,
+      "has_labels": true
+    },
+    "files": [
+      "1g2o_physics.pt",
+      "1b55_physics.pt",
+      "2ces_physics.pt"
+    ]
+  },
+  "./data/processed/graphs_working/train/": {
+    "n_files": 70,
+    "sample_stats": {
+      "nodes": 191,
+      "edges": 1964,
+      "features": 30,
+      "has_labels": true
+    },
+    "files": [
+      "2bfq_graph.pt",
+      "1f57_graph.pt",
+      "1dzk_graph.pt"
+    ]
+  },
+  "./data/processed/phase2c_final_300_converted/train/": {
+    "n_files": 240,
+    "sample_stats": {
+      "nodes": 0,
+      "edges": 0,
+      "features": 0,
+      "has_labels": false
+    },
+    "files": [
+      "2bfq_graph.pt",
+      "1mue_graph.pt",
+      "1gvx_graph.pt"
+    ]
+  },
+  "./data/processed/graphs/train/": {
+    "n_files": 50,
+    "sample_stats": {
+      "nodes": 191,
+      "edges": 1964,
+      "features": 25,
+      "has_labels": true
+    },
+    "files": [
+      "2bfq_graph.pt",
+      "1f57_graph.pt",
+      "1dzk_graph.pt"
+    ]
+  }
+}

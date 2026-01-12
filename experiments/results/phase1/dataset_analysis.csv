@@ -1,0 +1,2 @@
+total_complexes,sample_analyzed,protein_files,ligand_files,other_files,dataset_path
+1182,100,2368,3556,2505,data/PDBbind/refined-set

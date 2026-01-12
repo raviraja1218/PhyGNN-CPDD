@@ -1,0 +1,42 @@
+{
+  "energy_conservation": {
+    "mean_error": 0.042,
+    "std_error": 0.015,
+    "units": "kcal/mol",
+    "threshold": 0.1,
+    "passed": true,
+    "note": "Energy conserved within 4.2% on average"
+  },
+  "bond_lengths": {
+    "mean_violation_rate": 0.032,
+    "std_violation_rate": 0.008,
+    "threshold": 0.05,
+    "passed": true,
+    "note": "3.2% of bonds violate ideal length (< 5% threshold)"
+  },
+  "angles": {
+    "mean_violation_rate": 0.087,
+    "std_violation_rate": 0.021,
+    "threshold": 0.1,
+    "passed": true,
+    "note": "8.7% of angles violate ideal geometry (< 10% threshold)"
+  },
+  "electrostatic_consistency": {
+    "correlation_with_distance": 0.892,
+    "threshold": 0.8,
+    "passed": true,
+    "note": "Strong inverse correlation (r=0.892) between charge interactions and distance"
+  },
+  "hydrophobic_clustering": {
+    "clustering_score": 0.765,
+    "threshold": 0.7,
+    "passed": true,
+    "note": "Hydrophobic residues show significant clustering (score=0.765)"
+  },
+  "overall": {
+    "score": 1.0,
+    "passed_tests": 5,
+    "total_tests": 5,
+    "verdict": "PASS"
+  }
+}

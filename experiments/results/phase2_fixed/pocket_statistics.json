@@ -1,0 +1,302 @@
+[
+  {
+    "protein": "1v2j",
+    "nodes": 220,
+    "pockets": 15.0,
+    "percent": 6.8181818181818175
+  },
+  {
+    "protein": "2cc7",
+    "nodes": 768,
+    "pockets": 11.0,
+    "percent": 1.4322916666666665
+  },
+  {
+    "protein": "2ewb",
+    "nodes": 2916,
+    "pockets": 18.0,
+    "percent": 0.6172839506172839
+  },
+  {
+    "protein": "1bn4",
+    "nodes": 257,
+    "pockets": 16.0,
+    "percent": 6.22568093385214
+  },
+  {
+    "protein": "2a8g",
+    "nodes": 484,
+    "pockets": 15.0,
+    "percent": 3.0991735537190084
+  },
+  {
+    "protein": "1m5w",
+    "nodes": 1936,
+    "pockets": 16.0,
+    "percent": 0.8264462809917356
+  },
+  {
+    "protein": "2bfq",
+    "nodes": 191,
+    "pockets": 28.0,
+    "percent": 14.659685863874344
+  },
+  {
+    "protein": "2boh",
+    "nodes": 282,
+    "pockets": 23.0,
+    "percent": 8.156028368794328
+  },
+  {
+    "protein": "1mmr",
+    "nodes": 166,
+    "pockets": 18.0,
+    "percent": 10.843373493975903
+  },
+  {
+    "protein": "1hvh",
+    "nodes": 198,
+    "pockets": 33.0,
+    "percent": 16.666666666666664
+  },
+  {
+    "protein": "1f57",
+    "nodes": 307,
+    "pockets": 9.0,
+    "percent": 2.9315960912052117
+  },
+  {
+    "protein": "1qk4",
+    "nodes": 880,
+    "pockets": 18.0,
+    "percent": 2.0454545454545454
+  },
+  {
+    "protein": "2ayr",
+    "nodes": 246,
+    "pockets": 30.0,
+    "percent": 12.195121951219512
+  },
+  {
+    "protein": "1s5z",
+    "nodes": 900,
+    "pockets": 13.0,
+    "percent": 1.4444444444444444
+  },
+  {
+    "protein": "1fkg",
+    "nodes": 107,
+    "pockets": 14.0,
+    "percent": 13.084112149532709
+  },
+  {
+    "protein": "1dzk",
+    "nodes": 148,
+    "pockets": 18.0,
+    "percent": 12.162162162162163
+  },
+  {
+    "protein": "1g48",
+    "nodes": 258,
+    "pockets": 14.0,
+    "percent": 5.426356589147287
+  },
+  {
+    "protein": "1k27",
+    "nodes": 810,
+    "pockets": 23.0,
+    "percent": 2.8395061728395063
+  },
+  {
+    "protein": "2pvu",
+    "nodes": 235,
+    "pockets": 17.0,
+    "percent": 7.234042553191489
+  },
+  {
+    "protein": "1zvx",
+    "nodes": 163,
+    "pockets": 21.0,
+    "percent": 12.883435582822086
+  },
+  {
+    "protein": "2c94",
+    "nodes": 730,
+    "pockets": 24.0,
+    "percent": 3.287671232876712
+  },
+  {
+    "protein": "1g2o",
+    "nodes": 786,
+    "pockets": 19.0,
+    "percent": 2.4173027989821882
+  },
+  {
+    "protein": "1str",
+    "nodes": 488,
+    "pockets": 18.0,
+    "percent": 3.6885245901639343
+  },
+  {
+    "protein": "1eld",
+    "nodes": 240,
+    "pockets": 20.0,
+    "percent": 8.333333333333332
+  },
+  {
+    "protein": "1sv3",
+    "nodes": 121,
+    "pockets": 11.0,
+    "percent": 9.090909090909092
+  },
+  {
+    "protein": "2oxx",
+    "nodes": 325,
+    "pockets": 11.0,
+    "percent": 3.3846153846153846
+  },
+  {
+    "protein": "1wdn",
+    "nodes": 223,
+    "pockets": 16.0,
+    "percent": 7.174887892376682
+  },
+  {
+    "protein": "1k4h",
+    "nodes": 372,
+    "pockets": 20.0,
+    "percent": 5.376344086021505
+  },
+  {
+    "protein": "1duv",
+    "nodes": 999,
+    "pockets": 22.0,
+    "percent": 2.2022022022022023
+  },
+  {
+    "protein": "2q1q",
+    "nodes": 257,
+    "pockets": 16.0,
+    "percent": 6.22568093385214
+  },
+  {
+    "protein": "1okl",
+    "nodes": 255,
+    "pockets": 15.0,
+    "percent": 5.88235294117647
+  },
+  {
+    "protein": "1b55",
+    "nodes": 650,
+    "pockets": 14.0,
+    "percent": 2.1538461538461537
+  },
+  {
+    "protein": "2pk6",
+    "nodes": 198,
+    "pockets": 34.0,
+    "percent": 17.17171717171717
+  },
+  {
+    "protein": "2q63",
+    "nodes": 198,
+    "pockets": 31.0,
+    "percent": 15.656565656565657
+  },
+  {
+    "protein": "1ocq",
+    "nodes": 300,
+    "pockets": 16.0,
+    "percent": 5.333333333333334
+  },
+  {
+    "protein": "1ai4",
+    "nodes": 763,
+    "pockets": 15.0,
+    "percent": 1.9659239842726082
+  },
+  {
+    "protein": "1hxb",
+    "nodes": 198,
+    "pockets": 32.0,
+    "percent": 16.161616161616163
+  },
+  {
+    "protein": "1w4q",
+    "nodes": 124,
+    "pockets": 14.0,
+    "percent": 11.29032258064516
+  },
+  {
+    "protein": "1gfy",
+    "nodes": 296,
+    "pockets": 13.0,
+    "percent": 4.391891891891892
+  },
+  {
+    "protein": "1km3",
+    "nodes": 424,
+    "pockets": 20.0,
+    "percent": 4.716981132075472
+  },
+  {
+    "protein": "1x39",
+    "nodes": 602,
+    "pockets": 18.0,
+    "percent": 2.990033222591362
+  },
+  {
+    "protein": "1hbv",
+    "nodes": 198,
+    "pockets": 30.0,
+    "percent": 15.151515151515152
+  },
+  {
+    "protein": "2clh",
+    "nodes": 1308,
+    "pockets": 24.0,
+    "percent": 1.834862385321101
+  },
+  {
+    "protein": "1nhu",
+    "nodes": 558,
+    "pockets": 12.0,
+    "percent": 2.1505376344086025
+  },
+  {
+    "protein": "1ndw",
+    "nodes": 349,
+    "pockets": 18.0,
+    "percent": 5.157593123209169
+  },
+  {
+    "protein": "1b3g",
+    "nodes": 517,
+    "pockets": 26.0,
+    "percent": 5.029013539651837
+  },
+  {
+    "protein": "1gjc",
+    "nodes": 227,
+    "pockets": 20.0,
+    "percent": 8.81057268722467
+  },
+  {
+    "protein": "1lyb",
+    "nodes": 338,
+    "pockets": 30.0,
+    "percent": 8.875739644970414
+  },
+  {
+    "protein": "1b8o",
+    "nodes": 280,
+    "pockets": 20.0,
+    "percent": 7.142857142857142
+  },
+  {
+    "protein": "1wuq",
+    "nodes": 1840,
+    "pockets": 24.0,
+    "percent": 1.3043478260869565
+  }
+]

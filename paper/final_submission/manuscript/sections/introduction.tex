@@ -1,0 +1,20 @@
+\subsection*{The importance of protein pockets in drug discovery}
+Protein binding pockets are essential for drug discovery, serving as the primary sites for small molecule interactions. Traditional drug design relies on identifying and characterizing these pockets to develop therapeutic compounds. However, approximately 80\% of the human proteome is considered "undruggable" using conventional approaches, often due to the absence of well-defined binding pockets or the transient nature of cryptic pockets that only appear during conformational changes.
+
+\subsection*{Current methods and limitations}
+Existing pocket detection methods can be broadly categorized into geometric approaches, energy-based methods, and machine learning techniques. Geometric methods like FPOCKET \cite{le2009fpocket} identify cavities based on shape analysis but lack physical plausibility constraints. Molecular dynamics simulations provide physically accurate predictions but are computationally prohibitive, requiring days to weeks per protein. Recent machine learning approaches, particularly graph neural networks (GNNs), have shown promise but typically operate as black boxes without incorporating fundamental physical principles.
+
+\subsection*{The promise of physics-informed machine learning}
+Physics-informed machine learning offers a promising avenue for combining data-driven approaches with physical constraints. By embedding conservation laws and physical principles directly into neural network architectures, these models can achieve both high accuracy and physical plausibility. This is particularly important in structural biology, where biochemical realism is essential for meaningful predictions.
+
+\subsection*{Our contribution: PhyGNN}
+We introduce PhyGNN, a physics-informed graph neural network framework for protein pocket discovery. Our key innovations include:
+\begin{enumerate}
+    \item A physics-enhanced graph representation incorporating electrostatic, van der Waals, and hydrogen bonding features
+    \item Hamiltonian mechanics constraints enforcing energy conservation and geometric validity
+    \item An optimized physics regularization parameter ($\lambda = 0.0001$) balancing predictive accuracy with physical plausibility
+    \item Comprehensive validation demonstrating state-of-the-art performance and therapeutic relevance
+\end{enumerate}
+
+\subsection*{Paper organization}
+This paper is organized as follows: Section 2 presents our results including performance benchmarks and case studies. Section 3 details our methodology. Section 4 discusses implications and future directions. Supplementary materials provide additional methodological details and validation results.

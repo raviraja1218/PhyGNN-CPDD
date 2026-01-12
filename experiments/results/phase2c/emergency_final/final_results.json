@@ -1,0 +1,25 @@
+{
+  "test_f1": 0.0,
+  "test_precision": 0.0,
+  "test_recall": 1.0,
+  "test_auc": 0.5,
+  "best_val_f1": 0.0,
+  "phase2b_baseline": 0.5444,
+  "improvement_over_phase2b": -0.5444,
+  "hyperparameters": {
+    "lambda_physics": 1e-05,
+    "learning_rate": 0.0003,
+    "batch_size": 8,
+    "hidden_dim": 128,
+    "pos_weight": 10.0,
+    "dropout": 0.2,
+    "epochs": 200,
+    "patience": 40
+  },
+  "training_time_minutes": 0.358047882715861,
+  "num_train_graphs": 120,
+  "num_val_graphs": 15,
+  "num_test_graphs": 15,
+  "achieved_target": false,
+  "physics_ratio_at_best": 0.0
+}

@@ -1,0 +1,22 @@
+# Core PyTorch (matching your current CUDA 12.1)
+torch==2.5.1
+torchvision==0.20.1
+torchaudio==2.5.1
+
+# PyTorch Geometric with CUDA 12.1
+pyg_lib torch_scatter torch_sparse torch_cluster torch_spline_conv -f https://data.pyg.org/whl/torch-2.5.1+cu121.html
+torch_geometric==2.5.1
+
+# Data science essentials
+numpy==1.24.4
+pandas==2.0.3
+scipy==1.11.4
+scikit-learn==1.5.0
+
+# Visualization
+matplotlib==3.8.0
+seaborn==0.13.0
+tqdm==4.66.1
+
+# Project specific
+biopython==1.83

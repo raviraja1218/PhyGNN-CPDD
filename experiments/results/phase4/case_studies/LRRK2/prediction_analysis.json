@@ -1,0 +1,34 @@
+{
+  "protein_id": "LRRK2_5zjg",
+  "total_residues": 2527,
+  "pocket_residues": 88,
+  "pocket_percentage": 3.48,
+  "pocket_indices_sample": [
+    2387,
+    1468,
+    2104,
+    248,
+    1122,
+    2064,
+    1421,
+    2072,
+    296,
+    279,
+    0,
+    1768,
+    534,
+    1845,
+    2227,
+    1682,
+    506,
+    972,
+    2464,
+    770
+  ],
+  "processing_time_seconds": 125.8,
+  "model_confidence": {
+    "min_prob": 0.006,
+    "max_prob": 0.657,
+    "avg_prob": 0.165
+  }
+}

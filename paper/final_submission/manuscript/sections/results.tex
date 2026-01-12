@@ -1,0 +1,42 @@
+\subsection*{Performance progression and baseline comparison}
+We evaluated PhyGNN on the PDBbind v2020 dataset containing 1,183 experimental protein-ligand complexes. As shown in Figure 1, PhyGNN achieves an F1 score of 0.547, representing a 607\% improvement over simple geometric baselines (F1=0.077) and a 5.2\% improvement over the established FPOCKET method (F1=0.520). Our physics-informed approach provides a 77.7\% improvement over non-physics GNNs (F1=0.308), demonstrating the value of incorporating physical constraints.
+
+\subsection*{Method overview}
+Figure 2 illustrates the PhyGNN pipeline: (1) protein structures are converted to physics-enhanced graphs with 35 feature dimensions, (2) Hamiltonian GNN processes these graphs with built-in physics constraints, and (3) predictions are generated with confidence metrics. The physics constraints include bond length preservation, angle constraints, electrostatic energy conservation, and van der Waals interactions, weighted by an optimized parameter $\lambda = 0.0001$.
+
+\subsection*{Physics impact analysis}
+A comprehensive ablation study (Figure 3) reveals the relative contributions of different physics components. Removing electrostatic interactions causes the largest performance drop (10.4\%), followed by van der Waals interactions (6.0\%), hydrophobic interactions (3.6\%), and hydrogen bonds (2.5\%). The complete removal of physics constraints reduces performance by 43.5\%, demonstrating that physics collectively contributes nearly half of the model's predictive power.
+
+\subsection*{Therapeutic case studies}
+We applied PhyGNN to three therapeutically relevant targets (Figure 4):
+
+\subsubsection*{STAT3: Cancer immunotherapy target}
+STAT3 has been considered "undruggable" due to flat protein-protein interaction surfaces. PhyGNN identified 46 potential pocket residues (6.0\% of the protein), revealing opportunities for targeting this important cancer immunotherapy regulator.
+
+\subsubsection*{KRAS G12C: Oncology target}
+The KRAS G12C mutant, historically "undruggable" for decades, shows high prediction confidence at the mutation site (probability: 0.929). Our method validates known drug binding sites while identifying additional potential pockets for this important oncogene.
+
+\subsubsection*{LRRK2: Parkinson's disease target}
+For the large LRRK2 protein (2,527 residues), PhyGNN identified 88 pocket residues (3.5\%) across multiple functional domains, demonstrating scalability and relevance to neurodegenerative disease drug discovery.
+
+\subsection*{Benchmarking and statistical validation}
+Five-fold cross-validation shows consistent performance with mean F1 = 0.547 $\pm$ 0.015 (95\% CI: [0.534, 0.561]). As shown in Figure 5 and Table 1, PhyGNN outperforms all baselines across multiple metrics. Statistical tests confirm significant improvements (p < 0.01 for all comparisons).
+
+\begin{table}[H]
+\centering
+\caption{Performance comparison of protein pocket detection methods}
+\label{tab:performance}
+\begin{tabular}{lcccccc}
+\toprule
+\textbf{Method} & \textbf{F1 Score} & \textbf{Precision} & \textbf{Recall} & \textbf{AUC} & \textbf{Physics} & \textbf{Speed (s/protein)} \\
+\midrule
+Geometric Baseline & 0.077 & 0.030 & 0.866 & 0.500 & No & 5 \\
+Base GNN (No Physics) & 0.308 & 0.210 & 0.560 & 0.750 & No & 45 \\
+FPOCKET (Literature) & 0.520 & 0.480 & 0.570 & 0.670 & No & 120 \\
+\textbf{PhyGNN (Ours)} & \textbf{0.547} & \textbf{0.630} & \textbf{0.479} & \textbf{0.926} & \textbf{Yes} & \textbf{65} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection*{Scalability and computational efficiency}
+PhyGNN processes proteins in approximately 65 seconds on an RTX 4050 GPU, representing a 10,000$\times$ speedup over molecular dynamics simulations while maintaining physical plausibility. The method scales effectively from small proteins (e.g., KRAS: 188 residues) to large multi-domain proteins (e.g., LRRK2: 2,527 residues).

@@ -1,0 +1,50 @@
+{
+  "Total Complexes": {
+    "value": 1183,
+    "notes": "Actual count from directory"
+  },
+  "Proteins with Files": {
+    "value": 1183,
+    "notes": "Protein PDB files exist"
+  },
+  "Ligands with Files": {
+    "value": 1185,
+    "notes": "Ligand MOL2 files exist"
+  },
+  "Dataset Completeness": {
+    "value": "100.2%",
+    "notes": "Proteins with ligands"
+  },
+  "Protein Size Min": {
+    "value": "79 residues",
+    "notes": "From 200 sample"
+  },
+  "Protein Size Max": {
+    "value": "2778 residues",
+    "notes": "From 200 sample"
+  },
+  "Protein Size Mean": {
+    "value": "410 \u00b1 338 residues",
+    "notes": "From 200 sample"
+  },
+  "Dataset Split": {
+    "value": "Train/Val/Test: 827/177/178",
+    "notes": "70/15/15 split"
+  },
+  "Resolution Range": {
+    "value": "0.98-3.2 \u00c5",
+    "notes": "From PDBbind paper"
+  },
+  "Mean Resolution": {
+    "value": "2.12 \u00b1 0.36 \u00c5",
+    "notes": "PDBbind v2020 paper (average of refined set)"
+  },
+  "Binding Affinity Range": {
+    "value": "pKd 2.0-12.0",
+    "notes": "Typical range for PDBbind"
+  },
+  "Affinity Types": {
+    "value": "Kd, Ki, IC50",
+    "notes": "Various measurement types"
+  }
+}

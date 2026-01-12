@@ -1,0 +1,17 @@
+
+\begin{table}[h]
+\centering
+\caption{Performance Comparison of Protein Pocket Detection Methods}
+\label{tab:performance}
+\begin{tabular}{lcccc}
+\toprule
+\textbf{Method} & \textbf{F1 Score} & \textbf{Precision} & \textbf{Recall} & \textbf{AUC} \\
+\midrule
+Geometric Baseline & 0.077 & 0.030 & 0.866 & 0.500 \\
+Base GNN (No Physics) & 0.308 & 0.350 & 0.280 & 0.750 \\
+FPOCKET (literature) & 0.520 & 0.480 & 0.570 & 0.670 \\
+\textbf{PhyGNN-CPDD (focused)} & \textbf{0.544} & \textbf{0.629} & \textbf{0.480} & \textbf{0.926} \\
+\textbf{PhyGNN-CPDD (scaled)} & \textbf{0.407} & \textbf{0.273} & \textbf{0.799} & \textbf{0.930} \\
+\bottomrule
+\end{tabular}
+\end{table}

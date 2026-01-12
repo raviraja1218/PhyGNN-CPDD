@@ -1,0 +1,48 @@
+# PhyGNN-CPDD Default Configuration
+
+# Data paths
+data:
+  pdbind_path: "./data/PDBbind/refined-set"
+  processed_dir: "./data/processed"
+  cache_dir: "./data/cache"
+
+# Dataset splits
+splits:
+  train_ratio: 0.7
+  val_ratio: 0.15
+  test_ratio: 0.15
+  seed: 42
+
+# Model architecture
+model:
+  node_feature_dim: 128
+  edge_feature_dim: 32
+  hidden_dim: 256
+  num_layers: 3
+  dropout: 0.1
+  use_physics: true
+
+# Training
+training:
+  batch_size: 32
+  num_epochs: 100
+  learning_rate: 0.001
+  weight_decay: 0.0001
+  patience: 10
+  
+  # Physics constraint weights
+  physics_weight: 0.2
+  geometry_weight: 0.15
+  energy_weight: 0.1
+
+# Evaluation
+evaluation:
+  metrics: ["f1", "precision", "recall", "auc", "accuracy"]
+  save_predictions: true
+  save_plots: true
+
+# Output
+output:
+  results_dir: "./experiments/results"
+  logs_dir: "./experiments/logs"
+  checkpoints_dir: "./experiments/checkpoints"

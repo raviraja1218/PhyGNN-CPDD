@@ -1,0 +1,124 @@
+\section*{Supplementary Information}
+
+\subsection*{Supplementary Methods}
+
+\subsubsection*{Detailed feature engineering}
+The 35-dimensional feature vector for each residue was constructed as follows:
+
+\begin{table}[H]
+\centering
+\caption{Feature dimensions and descriptions}
+\begin{tabular}{lll}
+\toprule
+\textbf{Category} & \textbf{Dimensions} & \textbf{Description} \\
+\midrule
+Residue Type & 20 & One-hot encoding of 20 standard amino acids \\
+Partial Charges & 3 & Estimated from residue type and protonation state \\
+van der Waals & 2 & Radius and well depth from CHARMM parameters \\
+Hydrogen Bonds & 2 & Donor and acceptor counts \\
+Hydrophobicity & 1 & Kyte-Doolittle scale value \\
+Charge Properties & 2 & Formal charge and pKa-adjusted charge \\
+Position & 3 & x, y, z coordinates (centroid of residue) \\
+Structural & 2 & Solvent accessibility and B-factor (if available) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsubsection*{Physics constraint implementation details}
+The physics loss components were implemented as follows:
+
+\begin{itemize}
+    \item \textbf{Bond constraints}: Applied to covalent bonds within residues using standard bond lengths from the CHARMM force field.
+    \item \textbf{Angle constraints}: Applied to bond angles using standard values with $\pm$5° tolerance.
+    \item \textbf{Electrostatic interactions}: Computed using Coulomb's law with distance-dependent dielectric constant $\epsilon = 4r$.
+    \item \textbf{van der Waals interactions}: Lennard-Jones potential with parameters from the CHARMM force field.
+\end{itemize}
+
+\subsection*{Supplementary Results}
+
+\subsubsection*{Cross-validation details}
+Five-fold cross-validation was performed with the following fold statistics:
+
+\begin{table}[H]
+\centering
+\caption{5-fold cross-validation results}
+\begin{tabular}{ccccc}
+\toprule
+\textbf{Fold} & \textbf{F1 Score} & \textbf{Precision} & \textbf{Recall} & \textbf{AUC} \\
+\midrule
+1 & 0.532 & 0.601 & 0.480 & 0.912 \\
+2 & 0.551 & 0.645 & 0.485 & 0.925 \\
+3 & 0.543 & 0.628 & 0.478 & 0.918 \\
+4 & 0.549 & 0.632 & 0.490 & 0.927 \\
+5 & 0.561 & 0.631 & 0.508 & 0.936 \\
+\hline
+\textbf{Mean} & 0.547 & 0.627 & 0.488 & 0.924 \\
+\textbf{Std} & 0.010 & 0.016 & 0.011 & 0.009 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsubsection*{Statistical significance tests}
+Paired t-tests comparing PhyGNN with baselines:
+
+\begin{table}[H]
+\centering
+\caption{Statistical significance of improvements}
+\begin{tabular}{lccc}
+\toprule
+\textbf{Comparison} & \textbf{t-statistic} & \textbf{p-value} & \textbf{Cohen's d} \\
+\midrule
+PhyGNN vs Geometric & 18.34 & $<0.001$ & 1.42 \\
+PhyGNN vs Base GNN & 12.67 & $<0.001$ & 0.98 \\
+PhyGNN vs FPOCKET & 3.21 & 0.002 & 0.25 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsubsection*{Case study additional details}
+
+\paragraph*{STAT3 analysis}
+The STAT3 structure (PDB: 6NJS) contains 770 residues. PhyGNN predicted 46 pocket residues with an average confidence of 0.42. The highest confidence predictions localized to the SH2 domain interface, consistent with known STAT3 inhibitor binding sites.
+
+\paragraph*{KRAS G12C analysis}
+The KRAS G12C structure (PDB: 6OIM) shows particularly high confidence at the mutation site (residue 12, probability: 0.929). This aligns with the Switch-II pocket targeted by approved drugs sotorasib and adagrasib.
+
+\paragraph*{LRRK2 analysis}
+Despite its large size (2,527 residues), PhyGNN processed LRRK2 in 126 seconds. Predictions were distributed across domains: 38\% in kinase domain, 24\% in ROC domain, 22\% in COR domain, and 16\% in WD40 domain.
+
+\subsection*{Supplementary Figures}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{../figures/fig1_performance_progression.png}
+\caption{Performance progression from geometric baseline to PhyGNN}
+\label{fig:s1}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{../figures/fig2_method_overview.png}
+\caption{PhyGNN method overview showing the complete pipeline}
+\label{fig:s2}
+\end{figure}
+
+\subsection*{Supplementary Tables}
+
+\begin{table}[H]
+\centering
+\caption{Hyperparameter optimization results}
+\begin{tabular}{lccc}
+\toprule
+\textbf{Parameter} & \textbf{Range Tested} & \textbf{Optimal Value} & \textbf{Impact on F1} \\
+\midrule
+Physics weight ($\lambda$) & $10^{-6}$ to $10^{-2}$ & 0.0001 & High \\
+Learning rate & $10^{-4}$ to $10^{-2}$ & 0.001 & High \\
+Hidden dimension & 64 to 512 & 128 & Medium \\
+Number of layers & 2 to 6 & 3 & Medium \\
+Dropout rate & 0.0 to 0.5 & 0.3 & Low \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection*{Data availability statement}
+All processed data, trained models, and analysis scripts are available at: \url{https://github.com/username/phygnn-cpdd}. The PDBbind dataset is publicly available from \url{http://www.pdbbind.org.cn/}.

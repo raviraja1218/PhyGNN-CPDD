@@ -1,0 +1,38 @@
+{
+  "protein_id": "186l",
+  "total_residues": 208,
+  "pocket_residues": 10,
+  "pocket_percentage": 4.81,
+  "pocket_indices": [
+    166,
+    152,
+    77,
+    98,
+    133,
+    63,
+    69,
+    105,
+    174,
+    19
+  ],
+  "processing_time_seconds": 0.0,
+  "probabilities": [
+    0.39022562295805024,
+    0.2606879844890672,
+    0.2800739779214239,
+    0.540847212968979,
+    0.21002473586167056,
+    0.33249210053925427,
+    0.2355069677204004,
+    0.14848941931194856,
+    0.1396774554704127,
+    0.25297904455052134
+  ],
+  "graph_metadata": {
+    "num_nodes": 208,
+    "num_edges": 2080,
+    "has_physics_features": true
+  },
+  "success": true,
+  "test_mode": true
+}

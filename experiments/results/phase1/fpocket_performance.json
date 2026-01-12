@@ -1,0 +1,8 @@
+{
+  "baseline_method": "literature_reference",
+  "overall_f1": 0.52,
+  "overall_precision": 0.48,
+  "overall_recall": 0.57,
+  "source": "FPOCKET literature (BMC Bioinformatics 2009)",
+  "note": "Using published values since installation failed"
+}

@@ -1,0 +1,101 @@
+
+======================================================================
+PHYGNN SIMPLIFIED PIPELINE - TEST MODE
+======================================================================
+Using device: cuda
+
+============================================================
+RUNNING TEST SUITE (5 proteins)
+============================================================
+
+============================================================
+PROCESSING: 10gs
+============================================================
+1. [TEST MODE] Simulating graph building...
+   ✓ Simulated graph: 467 nodes, 4670 edges
+2. [TEST MODE] Simulating model prediction...
+✓ Model available at: ./experiments/results/phase2b/week2/training_fixed/hamgnn_best.pt
+  (In full implementation, would load model here)
+3. [TEST MODE] Generating test predictions...
+
+📊 RESULTS for 10gs:
+   • Total residues: 467
+   • Pocket residues: 23 (4.9%)
+   • Processing time: 0.00s
+   • Test mode: Yes
+✓ Predictions saved to ./experiments/results/phase4/pipeline/sample_predictions/10gs_prediction.json
+
+============================================================
+PROCESSING: 184l
+============================================================
+1. [TEST MODE] Simulating graph building...
+   ✓ Simulated graph: 459 nodes, 4590 edges
+2. [TEST MODE] Simulating model prediction...
+3. [TEST MODE] Generating test predictions...
+
+📊 RESULTS for 184l:
+   • Total residues: 459
+   • Pocket residues: 22 (4.8%)
+   • Processing time: 0.00s
+   • Test mode: Yes
+✓ Predictions saved to ./experiments/results/phase4/pipeline/sample_predictions/184l_prediction.json
+
+============================================================
+PROCESSING: 185l
+============================================================
+1. [TEST MODE] Simulating graph building...
+   ✓ Simulated graph: 174 nodes, 1740 edges
+2. [TEST MODE] Simulating model prediction...
+3. [TEST MODE] Generating test predictions...
+
+📊 RESULTS for 185l:
+   • Total residues: 174
+   • Pocket residues: 8 (4.6%)
+   • Processing time: 0.00s
+   • Test mode: Yes
+✓ Predictions saved to ./experiments/results/phase4/pipeline/sample_predictions/185l_prediction.json
+
+============================================================
+PROCESSING: 186l
+============================================================
+1. [TEST MODE] Simulating graph building...
+   ✓ Simulated graph: 208 nodes, 2080 edges
+2. [TEST MODE] Simulating model prediction...
+3. [TEST MODE] Generating test predictions...
+
+📊 RESULTS for 186l:
+   • Total residues: 208
+   • Pocket residues: 10 (4.8%)
+   • Processing time: 0.00s
+   • Test mode: Yes
+✓ Predictions saved to ./experiments/results/phase4/pipeline/sample_predictions/186l_prediction.json
+
+============================================================
+PROCESSING: 187l
+============================================================
+1. [TEST MODE] Simulating graph building...
+   ✓ Simulated graph: 169 nodes, 1690 edges
+2. [TEST MODE] Simulating model prediction...
+3. [TEST MODE] Generating test predictions...
+
+📊 RESULTS for 187l:
+   • Total residues: 169
+   • Pocket residues: 8 (4.7%)
+   • Processing time: 0.00s
+   • Test mode: Yes
+✓ Predictions saved to ./experiments/results/phase4/pipeline/sample_predictions/187l_prediction.json
+
+============================================================
+TEST SUITE SUMMARY
+============================================================
+Total proteins tested: 5
+Success rate: 100.0%
+Average processing time: 0.00s
+Note: Test mode used for pipeline validation. Real predictions would use actual model.
+Summary saved to: ./experiments/results/phase4/pipeline/end_to_end_test_results.json
+
+✓ Timing data saved to ./experiments/results/phase4/pipeline/inference_timings.csv
+
+======================================================================
+PIPELINE TEST COMPLETE!
+======================================================================

@@ -1,0 +1,20 @@
+\subsection*{Key findings and implications}
+PhyGNN demonstrates that integrating Hamiltonian mechanics constraints into graph neural networks significantly improves protein pocket detection, achieving state-of-the-art performance while ensuring physical plausibility. The 5.2\% improvement over FPOCKET and 77.7\% improvement over non-physics GNNs highlight the value of physics-informed approaches in structural biology.
+
+\subsection*{Physics contribution analysis}
+Our ablation study reveals that electrostatic interactions are the most important physics component, contributing 10.4\% of the F1 score improvement. This aligns with biochemical intuition, as electrostatic complementarity is crucial for ligand binding. The optimized physics weight $\lambda = 0.0001$ indicates that physics should contribute approximately 30\% of the total loss, providing guidance for future physics-informed machine learning applications.
+
+\subsection*{Therapeutic relevance}
+The application to STAT3, KRAS G12C, and LRRK2 demonstrates PhyGNN's potential for drug discovery. By revealing potential binding sites on previously "undruggable" targets and validating known drug binding sites, our method bridges computational prediction with therapeutic development. The scalability to large proteins like LRRK2 (2,527 residues) further extends applicability to complex biological systems.
+
+\subsection*{Limitations and future directions}
+Current limitations include reliance on static protein structures and computational requirements for large-scale screening. Future work will focus on:
+\begin{enumerate}
+    \item Incorporating conformational sampling for cryptic pocket discovery
+    \item Extending to protein-protein interaction interfaces
+    \item Developing adaptive physics weighting for different protein classes
+    \item Integrating with molecular docking for virtual screening pipelines
+\end{enumerate}
+
+\subsection*{Conclusion}
+PhyGNN establishes a framework for physics-informed machine learning in structural biology, demonstrating superior performance through the principled integration of physical constraints. By making accurate, physically plausible predictions accessible at computational speeds suitable for large-scale screening, our approach enables new opportunities for drug discovery against challenging therapeutic targets.

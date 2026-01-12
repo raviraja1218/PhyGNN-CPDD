@@ -1,0 +1,30 @@
+{
+  "test_performance": {
+    "f1": 0.4066390041493776,
+    "precision": 0.25684333139196275,
+    "recall": 0.9756637168141593,
+    "auc": 0.9684472703298933,
+    "loss": 0.44101591110229493
+  },
+  "training_info": {
+    "train_graphs": 240,
+    "val_graphs": 30,
+    "test_graphs": 30,
+    "training_time_minutes": 0.614382537206014,
+    "best_val_f1": 0.452855245683931,
+    "final_val_f1": 0.3701399688958009
+  },
+  "hyperparameters": {
+    "lambda_physics": 0.0001,
+    "learning_rate": 0.001,
+    "hidden_dim": 128,
+    "batch_size": 8,
+    "pos_weight": 20.0
+  },
+  "comparison": {
+    "phase1_baseline": 0.077,
+    "phase2a_base_gnn": 0.3077,
+    "phase2b_70proteins": 0.5444,
+    "phase2c_300proteins": 0.4066390041493776
+  }
+}

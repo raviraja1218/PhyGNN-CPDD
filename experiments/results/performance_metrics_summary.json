@@ -1,0 +1,19 @@
+{
+  "hamgnn_f1": 0.5444234404536862,
+  "hamgnn_precision": 0.62882096069869,
+  "hamgnn_recall": 0.48,
+  "hamgnn_auc": 0.9258259925954296,
+  "hamgnn_pred_loss": 0.15122111567429133,
+  "hamgnn_physics_loss": 641.025146484375,
+  "hamgnn_total_loss": 0.21532362699508667,
+  "base_gnn_f1": 0.3077,
+  "learning_rate_mean": 0.0010000000000000007,
+  "learning_rate_max": 0.001,
+  "learning_rate_min": 0.001,
+  "physics_weight_mean": 0.0001,
+  "physics_weight_max": 0.0001,
+  "physics_weight_min": 0.0001,
+  "lr_mean": 0.00040740740740740765,
+  "lr_max": 0.0005,
+  "lr_min": 0.00025
+}

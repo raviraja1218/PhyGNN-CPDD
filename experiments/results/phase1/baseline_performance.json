@@ -1,0 +1,9 @@
+{
+  "baseline_method": "python_geometric",
+  "overall_f1": 0.056742027887598745,
+  "overall_precision": 0.030011714756208983,
+  "overall_recall": 0.865618196995748,
+  "num_proteins_evaluated": 49,
+  "f1_std": 0.04311627035349682,
+  "note": "Python-only geometric baseline using distance-based heuristics"
+}
